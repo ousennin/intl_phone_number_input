@@ -33,6 +33,9 @@ class SelectorConfig {
   /// Add white space for short dial code
   final bool trailingSpace;
 
+  /// Add padding around the selector button
+  final EdgeInsets padding;
+
   const SelectorConfig({
     this.selectorType = PhoneInputSelectorType.DROPDOWN,
     this.showFlags = true,
@@ -40,6 +43,7 @@ class SelectorConfig {
     this.countryComparator,
     this.setSelectorButtonAsPrefixIcon = false,
     this.leadingPadding,
+    this.padding = EdgeInsets.zero,
     this.trailingSpace = true,
   });
 }
